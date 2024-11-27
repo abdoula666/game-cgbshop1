@@ -1,0 +1,36 @@
+export const wheelSegments = [
+  { value: 0.001, probability: 0.35, flag: '🇳🇬', name: 'Nigeria', color: '#008751' },
+  { value: 0.002, probability: 0.15, flag: '🇲🇦', name: 'Maroc', color: '#E31B23' },
+  { value: 0.003, probability: 0.1, flag: '🇸🇳', name: 'Sénégal', color: '#FCD116' },
+  { value: 0.004, probability: 0.08, flag: '🇨🇮', name: 'Côte d\'Ivoire', color: '#CE1126' },
+  { value: 0.005, probability: 0.07, flag: '🇬🇭', name: 'Ghana', color: '#000000' },
+  { value: 0.006, probability: 0.05, flag: '🇨🇲', name: 'Cameroun', color: '#E40937' },
+  { value: 0.007, probability: 0.04, flag: '🇩🇿', name: 'Algérie', color: '#12AD2B' },
+  { value: 0.008, probability: 0.03, flag: '🇹🇳', name: 'Tunisie', color: '#E31C23' },
+  { value: 0.009, probability: 0.025, flag: '🇪🇬', name: 'Égypte', color: '#F4C430' },
+  { value: 0.01, probability: 0.02, flag: '🇿🇦', name: 'Afrique du Sud', color: '#006B3F' },
+  { value: 0.02, probability: 0.015, flag: '🇰🇪', name: 'Kenya', color: '#CF2C1F' },
+  { value: 0.03, probability: 0.01, flag: '🇹🇿', name: 'Tanzanie', color: '#0C9E58' },
+  { value: 0.04, probability: 0.009, flag: '🇧🇯', name: 'Bénin', color: '#FCD116' },
+  { value: 0.05, probability: 0.008, flag: '🇧🇫', name: 'Burkina Faso', color: '#0C1C8C' },
+  { value: 0.06, probability: 0.007, flag: '🇹🇩', name: 'Tchad', color: '#CE1126' },
+  { value: 0.07, probability: 0.006, flag: '🇲🇱', name: 'Mali', color: '#FCD116' },
+  { value: 0.08, probability: 0.005, flag: '🇹🇬', name: 'Togo', color: '#DE2010' },
+  { value: 0.09, probability: 0.004, flag: '🇳🇪', name: 'Niger', color: '#009543' },
+  { value: 0.1, probability: 0.003, flag: '🇨🇩', name: 'RD Congo', color: '#007749' },
+  { value: 0.2, probability: 0.002, flag: '🇬🇳', name: 'Guinée', color: '#CE1126' },
+  { value: 0.3, probability: 0.001, flag: '🇸🇱', name: 'Sierra Leone', color: '#FCD116' },
+  { value: 0.4, probability: 0.0009, flag: '🇲🇷', name: 'Mauritanie', color: '#009639' },
+  { value: 0.5, probability: 0.0007, flag: '🇨🇫', name: 'Centrafrique', color: '#D21034' },
+  { value: 0.75, probability: 0.0004, flag: '🇬🇦', name: 'Gabon', color: '#0C1C8C' },
+  { value: 1, probability: 0.0001, flag: '🇨🇬', name: 'Congo', color: '#CE1126' }
+];
+
+export const GAME_CONFIG = {
+  MAX_WINNERS: 10,
+  PRIZE_POOL: 50000,
+  MIN_PLAYERS_TO_START: 100,
+  POINTS_PER_LEVEL: 10,
+  REFERRALS_NEEDED: 5,
+  MAX_TOTAL_PLAYERS: 1000,
+};
