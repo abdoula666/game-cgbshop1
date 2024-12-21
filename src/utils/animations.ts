@@ -1,4 +1,4 @@
-import gsap, { Timeline } from 'gsap';
+import gsap from 'gsap';
 import { GAME_CONSTANTS } from './constants';
 
 export const animateWheel = (wheelRef: HTMLElement, finalRotation: number): Promise<void> => {
@@ -29,8 +29,6 @@ export const animateThimbles = (thimbles: HTMLElement[]): Promise<void> => {
       });
     }
 
-    timeline.then((timeline: Omit<Timeline, "then">) => {
-      resolve();
-    });
+    timeline.then(resolve);
   });
 };

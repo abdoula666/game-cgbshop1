@@ -8,12 +8,12 @@ export const LoginForm: React.FC = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    await login(email);
+    await login(email.trim().toLowerCase()); // Normalize email
   };
 
   return (
     <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
-      <h1 className="text-2xl font-bold mb-6">Roue de la Fortune CGBShop1</h1>
+      <h1 className="text-2xl font-bold mb-6">Roue de la Fortune Cgbshop1</h1>
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
           <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
@@ -24,12 +24,12 @@ export const LoginForm: React.FC = () => {
             id="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-500"
-            placeholder="Votre email CGBShop1"
+            className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-[#AE2740]"
+            placeholder="Votre email Cgbshop1"
             required
           />
           <p className="mt-2 text-sm text-gray-600">
-            Vous devez avoir un compte sur CGBShop1.com pour jouer
+            Vous devez avoir un compte sur Cgbshop1.com pour jouer
           </p>
         </div>
         {error && (
@@ -40,8 +40,8 @@ export const LoginForm: React.FC = () => {
         <button
           type="submit"
           disabled={isLoading}
-          className="w-full bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 
-                   disabled:bg-gray-400 disabled:cursor-not-allowed"
+          className="w-full bg-[#AE2740] text-white p-3 rounded-lg hover:bg-[#982235] 
+                   disabled:bg-gray-400 disabled:cursor-not-allowed transition-colors"
         >
           {isLoading ? (
             <CircularProgress size={24} color="inherit" />
